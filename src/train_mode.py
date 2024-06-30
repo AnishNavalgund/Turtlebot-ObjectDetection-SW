@@ -7,10 +7,10 @@ from ultralytics import YOLO
 
 # Set constants and paths
 EXPERIMENT_NAME = "TurtleBot_ObjectDetection"
-RUN_NAME = "Run_3"
+RUN_NAME = "Run_4"
 DATASET_NAME = "TurtleBot_Dataset_SW1_v1"
 EPOCHS = 20
-BATCH_SIZE = 16
+BATCH_SIZE = 32
 data_path = './yolo_data/data.yaml'
 mlflow.set_tracking_uri("./res/mlruns/")  # Set the mlflow artifacts directory to the root directory of the project
 
