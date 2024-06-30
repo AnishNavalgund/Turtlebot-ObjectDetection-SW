@@ -1,0 +1,18 @@
+# General
+.venv/
+res/
+out/
+logs/
+.env
+data/
+yolo_data/
+raw_data/
+augmented_data/
+scripts/runs/
+scripts/testdata/
+output/
+res/
+runs/
+yolov8n.pt
+
+

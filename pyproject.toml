@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "objDet-env"
+version = "0.1.0"
+description = ""
+authors = ["AnishNavalgund <st179684@stud.uni-stuttgart.de>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.10"
+numpy = "^1.23.5"
+Pillow = "^10.0.0"
+matplotlib = "^3.7.2"
+ipykernel = "^6.25.0"
+ipywidgets = "^8.0.7"
+opencv-python = "^4.8.0.74"
+pycocotools = "^2.0.6"
+python-dotenv = "1.0.1"
+mlflow = "2.13.0"
+torch = "2.0.0"
+torchvision = "0.15.1"
+ultralytics = "^8.2.18"
+torchaudio = "2.0.1"
+albumentations = "1.4.10"
+array-record = "0.4.1"
+pyyaml = "^6.0.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
