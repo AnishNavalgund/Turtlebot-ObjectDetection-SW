@@ -106,9 +106,9 @@ def augment_data(images_path, labels_path, output_images_path, output_labels_pat
     print("Data augmentation completed.")
 
 
-images_path = 'yolo_data/train/images'  # Path to the training images
-labels_path = 'yolo_data/train/labels'  # Path to the training labels
-output_images_path = 'yolo_data/train/images'  # Output path for augmented images
-output_labels_path = 'yolo_data/train/labels'  # Output path for augmented labels
+images_path = 'yolo_data_v2/train/images'  # Path to the training images
+labels_path = 'yolo_data_v2/train/labels'  # Path to the training labels
+output_images_path = 'yolo_data_v2/train/images'  # Output path for augmented images
+output_labels_path = 'yolo_data_v2/train/labels'  # Output path for augmented labels
 
 augment_data(images_path, labels_path, output_images_path, output_labels_path)

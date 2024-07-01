@@ -47,8 +47,8 @@ def visualize_images(images_path, labels_path, output_vis_path):
 
 # Paths for visualization
 visualize_images_path = 'output/visualized/'  # Path to save images with bounding boxes drawn
-output_images_path = 'yolo_data/train/images'  # Path to the test images
-output_labels_path = 'yolo_data/train/labels'  # Path to the test labels
+output_images_path = 'yolo_data_v2/val/images'  # Path to the test images
+output_labels_path = 'yolo_data_v2/val/labels'  # Path to the test labels
 
 # Visualize all the augmented images with bounding boxes
 visualize_images(output_images_path, output_labels_path, visualize_images_path)

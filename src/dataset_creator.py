@@ -4,8 +4,8 @@ from glob import glob
 from sklearn.model_selection import train_test_split
 
 # Paths
-raw_data_path = 'raw_data'
-yolo_data_path = 'yolo_data'
+raw_data_path = 'raw_data_v2'
+yolo_data_path = 'yolo_data_v2'
 yolo_train_path = os.path.join(yolo_data_path, 'train')
 yolo_val_path = os.path.join(yolo_data_path, 'val')
 yolo_test_path = os.path.join(yolo_data_path, 'test')

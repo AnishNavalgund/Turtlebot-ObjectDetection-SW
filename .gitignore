@@ -5,8 +5,11 @@ out/
 logs/
 .env
 data/
+yolo_data_v1/
 yolo_data/
-raw_data/
+raw_data_v1/
+yolo_data_v2/
+raw_data_v2/
 augmented_data/
 scripts/runs/
 scripts/testdata/
