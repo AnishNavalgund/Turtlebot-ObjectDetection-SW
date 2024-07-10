@@ -16,6 +16,7 @@ scripts/testdata/
 output/
 res/
 runs/
+yolo_data_v3/
 yolov8n.pt
 
 

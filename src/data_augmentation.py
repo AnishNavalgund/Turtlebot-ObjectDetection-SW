@@ -4,7 +4,7 @@ import albumentations as A
 import numpy as np
 from glob import glob
 
-def augment_data(images_path, labels_path, output_images_path, output_labels_path, num_augmentations=2):
+def augment_data(images_path, labels_path, output_images_path, output_labels_path, num_augmentations=50):
     # Define the augmentation pipeline with appropriate bounding box parameters
     transform = A.Compose([
         A.HorizontalFlip(p=0.5),
@@ -12,6 +12,10 @@ def augment_data(images_path, labels_path, output_images_path, output_labels_pat
         A.RandomBrightnessContrast(p=0.2),
         A.Rotate(limit=30, p=0.5, border_mode=cv2.BORDER_CONSTANT, value=0),
         A.Blur(blur_limit=3, p=0.2),
+        A.HueSaturationValue(p=0.2),
+        A.RGBShift(p=0.2),
+        A.RandomGamma(p=0.2),
+        A.GaussNoise(p=0.2),
     ], bbox_params=A.BboxParams(format='pascal_voc', label_fields=['class_labels'], min_area=0.0, min_visibility=0.0))
 
     # Function to load image and corresponding labels
@@ -106,9 +110,9 @@ def augment_data(images_path, labels_path, output_images_path, output_labels_pat
     print("Data augmentation completed.")
 
 
-images_path = 'yolo_data_v2/train/images'  # Path to the training images
-labels_path = 'yolo_data_v2/train/labels'  # Path to the training labels
-output_images_path = 'yolo_data_v2/train/images'  # Output path for augmented images
-output_labels_path = 'yolo_data_v2/train/labels'  # Output path for augmented labels
+images_path = 'yolo_data_v3/train/images'  # Path to the training images
+labels_path = 'yolo_data_v3/train/labels'  # Path to the training labels
+output_images_path = 'yolo_data_v3/train/images'  # Output path for augmented images
+output_labels_path = 'yolo_data_v3/train/labels'  # Output path for augmented labels
 
 augment_data(images_path, labels_path, output_images_path, output_labels_path)

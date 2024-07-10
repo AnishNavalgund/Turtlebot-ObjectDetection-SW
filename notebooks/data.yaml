@@ -1,0 +1,7 @@
+names:
+- class0
+- class1
+- class2
+nc: 3
+train: ../yolo_data_v2/train/images
+val: ../yolo_data_v2/val/images
